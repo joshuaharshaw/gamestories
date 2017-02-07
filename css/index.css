@@ -1,0 +1,111 @@
+body {
+  background-color: #ededed;
+}
+.navbar {
+  height:100px;  
+  background-color: #81CC68;
+  border-radius: 0px;
+  border-color:#81CC68;
+}
+
+#nav-links {
+  width:33%;
+  margin:0px auto;
+  float:none;
+  position:relative;
+  top:30px;
+}
+
+.nav-link {
+  position:relative;
+  top:20px;
+  color:white;
+}
+
+.nav-link:hover {
+  position:relative;
+  top:20px;
+  background-color:#a8c49f;
+}
+
+#link-center{
+ margin:0px 40px;
+ min-width: 150px;
+}
+
+span {
+  margin:0px 3px;
+  position:relative;
+  top:5px;
+}
+
+#nav-brand {
+  min-width:100px;
+  margin:0px auto;
+  transform:Scale(2); 
+}
+
+.glyphicon-picture {
+  transform:Scale(2);
+  margin: 5px;
+}
+
+.material {
+  box-shadow: 0px 2px 5px black;
+}
+
+.navbar {
+  border-radius: 0 !important;
+}
+
+#search {
+  position: relative;
+  top: 8px;
+  right: 5px;  
+}
+
+#top-menu {
+  min-height:100px; 
+  margin:0px auto;
+}
+
+#cats {
+  width:33%;
+  min-height:90px;
+  text-align:center;
+  margin:0px auto;
+}
+
+#cats-head {
+  font-size:1.5em; 
+}
+
+.btn-default{
+  background-color:#81CC68;
+  border-color: #ababab;
+}
+
+#mainbox {
+  width:75%;
+  height: 800px;
+  background-color: white;
+  box-shadow: 0px 2px 5px black;
+  margin:0px auto;
+}
+
+.vidbox {
+  float:left;
+  background-color:black;
+  height:220px;
+  width:200px;
+  margin: 10px;
+  box-shadow: 0px 2px 10px black;
+}
+
+#thumb {
+  margin: 10px 25px;
+}
+
+#desc {
+  margin: 5px 10px; 
+}

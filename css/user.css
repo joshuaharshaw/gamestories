@@ -1,0 +1,188 @@
+
+
+@media (min-width: 768px max-width: 991px) {
+  
+}
+
+
+@media (min-width:992px) {
+
+body {
+  background-color: #ededed;
+}
+
+i {
+ color: #858687;
+}
+
+.material {
+  box-shadow: 0px 2px 10px black;
+}
+
+.navbar {
+  height:100px;  
+  background-color: #81CC68;
+  border-radius: 0px;
+  border-color:#81CC68;
+}
+
+#nav-links {
+  width:33%;
+  margin:0px auto;
+  float:none;
+  position:relative;
+  top:30px;
+}
+
+.nav-link {
+  position:relative;
+  top:20px;
+  color:white;
+}
+
+.nav-link:hover {
+  position:relative;
+  top:20px;
+  background-color:#a8c49f;
+}
+
+#link-center{
+ margin:0px 40px;
+ min-width: 150px;
+}
+
+.navbar > span {
+  margin:0px 3px;
+  position:relative;
+  top:5px;
+}
+
+#nav-brand {
+  min-width:100px;
+  margin:0px auto;
+  transform:Scale(2); 
+}
+
+.glyphicon-picture {
+  transform:Scale(2);
+  margin: 5px;
+}
+
+#header {
+  text-align:center;
+}
+
+#wrapper {
+  width: 1500px;
+  margin: 0px auto;
+}
+
+#viewport {
+  width:1200px;
+  height:600px;
+  background-color:white;
+  margin: 0px auto 25px;
+}
+
+#img-port {
+  background-color:black;
+  margin:5px 35px;
+}
+
+#port-craft {
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+
+.craft-content {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.port-desc {
+  height:50px;
+  overflow: auto;
+}
+
+#port-program {
+  margin-left: 35px;
+  margin-top: 10px;
+}
+
+.btn-spec {
+  width:400px;
+}
+
+.xfer-craft, .xfer-program {
+    float:right;
+    width:30px;
+    height:110px;
+    background-color:#5159a0;
+    position:relative;
+    bottom:110px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.glyphicon-open {
+    position:relative;
+    top:45px;
+    left:10px;
+}
+
+.program-buttons {
+  min-height:50px;
+  width:1300px;
+  margin:0px auto;
+}
+
+.new-button {
+  float:left;
+  height:50px;
+  width:30%;
+  background-color:grey;
+  margin:0 10px;
+}
+
+.dropdown-menu {
+  width:100%;
+}
+
+#craft-thumb {
+  float:left;
+  margin-right: 10px;
+}
+
+.xfer-button {
+    float:right;
+    width:30px;
+    height:110px;
+    background-color:#5159a0;
+    position:relative;
+    bottom:110px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.glyphicon-open {
+    position:relative;
+    top:45px;
+    left:10px;
+}
+
+.dropdown-menu {
+  width:100%;
+}
+
+#img-thumb {
+  float:left;
+  margin-right: 10px;
+}
+
+.button-group {
+  min-height:50px;
+  width:1300px;
+  margin:0px auto;
+}
+
+  
+}
