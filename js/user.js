@@ -62,3 +62,13 @@ const transferCraft = document.getElementsByClassName('xfer-craft');
 for (i = 0; i < transferCraft.length; i++) {
     transferCraft[i].addEventListener('click', showCraft);
 }
+
+
+function clearPort () {
+    const viewport = document.getElementById('viewport');
+
+    viewport.innerHTML= "";
+}
+
+
+document.getElementById('clear-button').addEventListener('click', clearPort);
