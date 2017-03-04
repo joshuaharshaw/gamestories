@@ -1,77 +1,37 @@
+/* Default CLasses */
 body {
   background-color: #ededed;
 }
-.navbar {
-  height:100px;  
-  background-color: #81CC68;
-  border-radius: 0px;
-  border-color:#81CC68;
-}
 
-#nav-links {
-  width:33%;
-  margin:0px auto;
-  float:none;
-  position:relative;
-  top:30px;
-}
-
-.nav-link {
-  position:relative;
-  top:20px;
-  color:white;
-}
-
-.nav-link:hover {
-  position:relative;
-  top:20px;
-  background-color:#a8c49f;
-}
-
-#link-center{
- margin:0px 40px;
- min-width: 150px;
-}
-
-span {
-  margin:0px 3px;
-  position:relative;
-  top:5px;
-}
-
-#nav-brand {
-  min-width:100px;
-  margin:0px auto;
-  transform:Scale(2); 
-}
-
-.glyphicon-picture {
-  transform:Scale(2);
-  margin: 5px;
+i {
+ color: #858687;
 }
 
 .material {
+  box-shadow: 0px 2px 10px black;
+}
+
+.material-sm {
   box-shadow: 0px 2px 5px black;
 }
 
-.navbar {
-  border-radius: 0 !important;
+
+/* Navbar */
+.nav-link {
+  position:relative;
+  top:18px;
+  color:white;
 }
 
-#search {
-  position: relative;
-  top: 8px;
-  right: 5px;  
-}
-
+/* Top Menu*/
 #top-menu {
-  min-height:100px; 
-  margin:0px auto;
+  min-height:50px; 
+  margin:40px auto 10px auto;
 }
 
 #cats {
-  width:33%;
-  min-height:90px;
+  width:75%;
+  min-height:50px;
   text-align:center;
   margin:0px auto;
 }
@@ -85,12 +45,38 @@ span {
   border-color: #ababab;
 }
 
+/* Individual Content Boxes */
+.vidbox {
+  float:left;
+  background-color:black;
+  height:220px;
+  width:200px;
+  margin: 10px;
+  box-shadow: 0px 2px 10px black;
+}
+
+#thumb {
+  margin: 10px 25px;
+}
+
+#desc {
+  margin: 5px 10px; 
+}
+
+
+
+@media (max-width: 767px) {
+
+/* Navbar */
+
+
+/* Main Content Box */
 #mainbox {
-  width:75%;
+  width:95%;
   height: 800px;
   background-color: white;
   box-shadow: 0px 2px 5px black;
-  margin:0px auto;
+  margin:0px auto 30px auto;
 }
 
 .vidbox {
@@ -108,4 +94,68 @@ span {
 
 #desc {
   margin: 5px 10px; 
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+/* Navbar*/
+
+
+
+/* Main Content Box*/
+#mainbox {
+  width:90%;
+  height: 800px;
+  background-color: white;
+  box-shadow: 0px 2px 5px black;
+  margin:0px auto 30px auto;
+}
+
+}
+
+
+@media (min-width:992px) {
+
+/* Sidebar*/
+#sidebar {
+  width:250px;
+  min-height:1200px;
+  background-color: #81CC68;
+  position:fixed;
+}
+
+#nav-brand {
+  min-width:100px;
+  margin:0px auto;
+  transform:Scale(1.5); 
+  text-align:center;
+}
+
+.glyphicon-picture {
+  transform:Scale(2);
+  margin: 5px;
+}
+
+#nav-links{ 
+  list-style: none;
+  padding: 0px;
+  position: relative;
+  top:10px; 
+ }
+
+.nav-link {
+  text-align:center;
+}
+
+/* Main Content Box*/
+#mainbox {
+  width:85%;
+  height: 800px;
+  background-color: white;
+  box-shadow: 0px 2px 5px black;
+  margin:0px auto 30px auto;
+}
+
 }

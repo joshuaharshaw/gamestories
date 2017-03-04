@@ -46,7 +46,7 @@ function showCraft (e) {
   viewport.innerHTML = 
         `
   <div id="craft-port">
-     <h1 id="port-craft">${ships[targetIndex].name}</h1>
+     <h1 id="port-craft"><i>Spacecraft:</i> ${ships[targetIndex].name}</h1>
      <img src="#" width="1100" height="450" id="img-port"></img>
      <div class="craft-content">
         <span>Type: ${ships[targetIndex].type}</span> |
