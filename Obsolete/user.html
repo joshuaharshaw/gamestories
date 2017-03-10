@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Space Program</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./css/user.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Righteous" rel="stylesheet">
+</head>
+
+<body>
+
+ <!--Navbar -->
+ <nav class="navbar navbar-default material">
+        <div class="container-fluid">
+         <!-- Navbar Structure for Mobile Navbar -->
+          <div class="navbar-header">
+          <a href="#" class="navbar-brand visible-xs"><div id="nav-brand"><span>Game</span><span class="glyphicon glyphicon-picture"></span> <span>Stories</span></div></a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+          <!-- Nav Links -->
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+	          <ul class="nav navbar-nav" id="nav-links">
+	            <li class="nav-link"><a href="./index.html">Home</a></li>
+	            <hr class="visible-xs" />
+	            <li class="nav-link"><a href="./user.html">My Program</a></li>
+	            <hr class="visible-xs" />
+	            <li id="link-center" class="hidden-xs"><a href="#" id="nav-brand"><div ><span>Game</span><span class="glyphicon glyphicon-picture"></span> <span>Stories</span></div></a></li>
+	            <li class="nav-link"><a href="#">Featured</a></li>
+	            <hr class="visible-xs" />
+	            <li class="nav-link"><a href="#">Categories</a></li>
+	          </ul>            
+          </div> 
+        </div>
+  </nav>
+
+<!-- Header -->	 
+<h1 id="header">My Space Program</h1>
+
+<div class="wrapper">
+
+<!-- Main Viewport -->	
+<div class="material" id="viewport"></div>
+
+<!-- Three Program Management BUttons -->
+<div class= "container" id="program-buttons">
+
+	 <!-- Craft Button-->
+	<div class="btn-group col-lg-4 col-md-6 col-sm-6 col-xs-12" id="">
+	  <button type="button" class="btn btn-default btn-spec" id="craft"><span class="glyphicon glyphicon-plane"></span> Add Craft</button>
+	  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    <span class="caret"></span>
+	    <span class="sr-only">Toggle Dropdown</span>
+	  </button>
+	  
+	  <ul class="dropdown-menu" id="craft-list"></ul>
+	 </div>
+	  
+	  <!-- Program Button-->
+	  <div class="btn-group col-lg-4 col-md-6 col-sm-6 col-xs-12" id="">
+	  <button type="button" class="btn btn-default btn-spec" id="program"><span class="glyphicon glyphicon-globe"></span> Add Program</button>
+	  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    <span class="caret"></span>
+	    <span class="sr-only">Toggle Dropdown</span>
+	  </button>
+	  
+	  <ul class="dropdown-menu" id="program-list"></ul>
+	  </div>
+	  
+	  <!-- Mission Button-->
+	  <div class="btn-group col-lg-4 col-md-6 col-sm-6 col-xs-12" id="mission-button">
+	  <button type="button" class="btn btn-default btn-spec" id="mission"><span class="glyphicon glyphicon-tasks"></span> Add Mission </button>
+	  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    <span class="caret"></span>
+	    <span class="sr-only">Toggle Dropdown</span>
+	  </button>
+	  
+	  <ul class="dropdown-menu" id="mission-list"></ul>
+	 </div>
+	</div> 
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="./js/user.js"></script>
+<script type="text/javascript" src="./js/programs.js"></script>
+<script type="text/javascript" src="./js/forms.js"></script>
+</html>
+
+
+    <!-- 
+
+    1. Consider using css animations to have all forms exist on this page, instead of them being separate pages. 
+
+	2. Consider using ReactJS for increased functionality. 
+
+    -->
+
+<!-- 
+	Administrator Stats
+	<div class="material"  id="admin-bio">
+		
+		<div id="profile-pic"> <img src="#" width="300" height="400"> <br /> <p>Administrator SkyHook</p> </div>
+
+		<div id="profile-text"><h1>Adminstrator Stats</h1> <p class="stats">Hours Played:</p> <p class="stats">Missions Completed:</p> <p class="stats">Missions In Progress:</p> <p class="stats">Active Kerbals:</p></div>
+
+	</div>
+-->
+
+

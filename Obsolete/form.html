@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>New Project!</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> <!-- Bootstrap Main-->
+	<link rel="stylesheet" type="text/css" href="./css/pagetemplate.css"> <!-- Main CSS: Change with each new page!! -->
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Righteous" rel="stylesheet"> <!-- Google Font-->
+</head>
+<body>
+ <!-- Nav Bar -->
+
+<!-- Mobile Navbar--> 
+<nav class="navbar navbar-default visible-xs material mobile-navbar">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a href="#"><div id="nav-brand"><span>Game</span><span class="glyphicon glyphicon-picture"></span> <span>Stories</span></div></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav" id="nav-links">
+        <li class="nav-link"><a href="./index.html">Home</a></li>
+        <hr class="list" />
+        <li class="nav-link"><a href="./newuser.html">My Program</a></li>         
+        <hr class="list"/>
+        <li class="nav-link"><a href="#">Featured</a></li>
+        <hr class="list"/>
+        <li class="nav-link"><a href="#">Categories</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+ <!-- Side Bar -->
+ <div class="material hidden-xs" id="sidebar">
+  <br />
+
+  <a href="#"><div id="nav-brand"><span>Game</span><span class="glyphicon glyphicon-picture"></span> <span>Stories</span></div></a>
+  <hr />
+  <!-- Navbar Links-->
+  <ul id="nav-links">
+    <li class="nav-link"><a href="./index.html">Home</a></li>
+    <hr class="list" />
+    <li class="nav-link"><a href="./newuser.html">My Program</a></li>         
+    <hr class="list"/>
+    <li class="nav-link"><a href="#">Featured</a></li>
+    <hr class="list"/>
+    <li class="nav-link"><a href="#">Categories</a></li>
+  </ul>     
+ </div>
+
+ <!-- Entire Center Display-->
+<div id="allProjects">
+
+  <div class="material-sm" id="program-desc">
+    <h2 class="program-desc-h2">What's This?</h2>
+    <hr class="list" />
+    <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+    <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+    <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+  </div>
+
+  <div class="story-form material-sm">
+    <form method="post" action="handle.php" class="form-group">      
+        <h2>New Space Program</h2>
+        <hr class="list" />
+
+        <label for="program"> Program Name <br /><input class="form-control" type="text" name="program" ></input></label>    
+        <br />
+        <label for="craft">Program Craft <br /><input class="form-control" type="text" name="craft" ></input></label>
+        <br />
+        <label for="statement"> Program Mission Statement <br /><input class="form-control" type="text" name="statement" ></input></label>
+        <br />
+        <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="describe" placeholder="Description/Notes Here" ></textarea></label>
+        <br />
+        <label for="submit"><input class=" btn btn-default" type="submit" name="program" value="Submit Program"></input></label>
+    </form>
+  </div>    
+
+
+</div> 
+
+
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script> <!-- JQuery-->
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity= "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- Bootstrap JS Library-->
+
+</html>
+
+

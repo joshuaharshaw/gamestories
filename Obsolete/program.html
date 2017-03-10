@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Mission</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/form.css">
+</head>
+
+<body>
+
+<!-- Navbar-->
+  <nav class="navbar navbar-default material">
+    <a class="navbar-brand" href="#">GameStories!</a>
+    
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="./user.html">My Program</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+    </ul>
+    
+    <input class="pull-right" type="search" placeholder="Search for a Story"></input>
+  </nav>
+
+<!-- Main Form-->
+  <div class="story-form material">
+     <form method="post" action="handle.php" class="form-group">
+      
+        <h2>New Space Program</h2>
+        <hr />
+
+      <label for="program"> Program Name <br /><input class="form-control" type="text" name="program" ></input></label>
+      
+      <br />
+        <label for="craft">Program Craft <br /><input class="form-control" type="text" name="craft" ></input></label>
+      <br />
+      <label for="statement"> Program Mission Statement <br /><input class="form-control" type="text" name="statement" ></input></label>
+      <br />
+      <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="describe" placeholder="Description/Notes Here" ></textarea></label>
+
+    <br />
+
+      <label for="submit"><input class=" btn btn-default" type="submit" name="program" value="Submit Program"></input></label>
+    </form>
+  </div>
+
+</body>
+</html>

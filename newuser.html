@@ -59,6 +59,27 @@
   </ul>     
  </div>
  
+ <!-- Program Management Bar -->
+ <div class="material-sm" id="manager">
+
+  <div class="btn-group btn-group-lg" role="group" aria-label="..." >
+    <button type="button" class="btn btn-default btn-show">Project</button>
+    <button type="button" class="btn btn-default btn-add" id="showProject" data-form-type="modalProject"><span class="glyphicon glyphicon-plus" data-form-type="modalProject"></span></button>
+  </div>
+
+  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+    <button type="button" class="btn btn-default btn-show">Craft</button>
+    <button type="button" class="btn btn-default btn-add" id="showCraft" data-form-type="modalCraft"><span class="glyphicon glyphicon-plus" data-form-type="modalCraft"></span></button>
+  </div>
+
+  <div class="btn-group btn-group-lg" role="group" aria-label="...">
+    <button type="button" class="btn btn-default btn-show">Mission</button>
+    <button type="button" class="btn btn-default btn-add" id="showMission" data-form-type="modalMission"><span class="glyphicon glyphicon-plus" data-form-type="modalMission"></span></button>
+  </div>
+
+ </div>
+
+
  <!-- Entire Center Display-->
 <div id="allProjects">
 
@@ -105,8 +126,145 @@
 </div> 
 </div> 
 
+<!-- Modal Forms-->
+
+<!-- Project Form Modal -->
+<div id="modalProject" class="modal">
+  <div class="formWrapper">
+      <!-- Main Form-->
+    <div class="material-sm" id="program-desc">
+      <h2 class="program-desc-h2">What's This?</h2>
+      <hr class="list" />
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+    </div>
+
+    <div class="story-form material-sm">
+      <form method="post" action="handle.php" class="form-group">      
+          <h2>New Space Program</h2>
+          <hr class="list" />
+
+          <label for="program"> Program Name <br /><input class="form-control" type="text" name="program" ></input></label>    
+          <br />
+          <label for="craft">Program Craft <br /><input class="form-control" type="text" name="craft" ></input></label>
+          <br />
+          <label for="statement"> Program Mission Statement <br /><input class="form-control" type="text" name="statement" ></input></label>
+          <br />
+          <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="describe" placeholder="Description/Notes Here" ></textarea></label>
+          <br />
+          <label for="submit"><input class=" btn btn-default" type="submit" name="program" value="Submit Program"></input></label>
+      </form>
+
+      <button class="btn btn-danger closeButton" data-form-type="modalProject"> <span class="glyphicon glyphicon-remove" data-form-type="modalProject"></span></button>
+    </div>    
+  </div>      
+ 
+</div>
+
+<!-- Craft Form Modal -->
+<div id="modalCraft" class="modal">
+  <div class="formWrapper">
+      <!-- Form Description -->
+    <div class="material-sm" id="program-desc">
+      <h2 class="program-desc-h2">What's This?</h2>
+      <hr class="list" />
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+    </div>
+  <!-- Main Form-->
+  <div class="story-form material">
+     <form method="post" action="handle.php" class="form-group">
+      
+        <h2>New Craft</h2>
+        <hr />
+        <!-- Craft Name-->
+      <label for="craft"> Craft Name <br /><input class="form-control" type="text" name="craft" ></input></label>
+      
+      <br />
+        <!-- Craft Type-->
+        <label for="type">Craft Type <br />
+          <select class="form-control" name="type">
+            <option value="lifter">Lifter</option>
+            <option value="ship">Ship</option>
+            <option value="plane">Plane</option>
+            <option value="lander">Lander</option>
+            <!-- Add Option to be able to add custom vehicle types-->
+          </select>
+        </label>
+
+      <!-- Craft Program-->
+      <label for="program"> Craft Program <br />
+        <select class="form-control" name="program">
+          <option value="astral-might">Astral Might</option>
+          <option value="astral-reach">Astral Reach</option>
+          <option value="first-steps">First Steps</option>
+        </select>
+      </label>
+
+      <br />
+      <!-- Craft Description-->
+      <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="describe" placeholder="Description/Notes Here" ></textarea></label>
+
+      <br />
+
+      <!-- Submit Button-->
+      <label for="submit"><input class="btn btn-default" type="submit" name="mission" value="Submit Log"></input></label>
+    </form>
+
+    <button class="btn btn-danger closeButton" data-form-type="modalCraft"> <span class="glyphicon glyphicon-remove" data-form-type="modalCraft"></span></button>
+  </div>
+     
+  </div>      
+
+</div>
+
+<!-- Mission Form Modal -->
+<div id="modalMission" class="modal">
+
+  <div class="formWrapper">
+      <!-- Main Form-->
+    <div class="material-sm" id="program-desc">
+      <h2 class="program-desc-h2">What's This?</h2>
+      <hr class="list" />
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
+    </div>
+
+    <div class="story-form material">
+       <form method="post" action="handle.php" class="form-group">
+        
+          <h2>New Mission Report</h2>
+          <hr />
+
+        <label for="mission"> Mission Name <br /><input class="form-control" type="text" name="mission" ></input></label>
+        
+        <br />
+          <label for="craft">Mission Craft <br /><input class="form-control" type="text" name="craft" ></input></label>
+        <br />
+        <label for="type"> Mission Type <br /><input class="form-control" type="text" name="type" ></input></label>
+        <br />
+        <label for="crew">Crew <br /><input class="form-control" type="text" name="crew" ></input></label>
+        <br />
+        <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="describe" placeholder="Description/Notes Here" ></textarea></label>
+
+      <br />
+
+        <label for="submit"><input class=" btn btn-default" type="submit" name="mission" value="Submit Log"></input></label>
+      </form>
+
+      <button class="btn btn-danger closeButton" data-form-type="modalMission"> <span class="glyphicon glyphicon-remove" data-form-type="modalMission"></span></button>
+    </div>
+       
+  </div>      
+   
+</div>
 
 </body>
+
+
 
 <script
   src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -114,6 +272,8 @@
   crossorigin="anonymous"></script> <!-- JQuery-->
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity= "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- Bootstrap JS Library-->
+
+<script type="text/javascript" src="./js/newuser.js"></script>
 
 </html>
 
