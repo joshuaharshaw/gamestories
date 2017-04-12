@@ -33,10 +33,19 @@ hr.list {
   border-radius:0px;
 }
 
+/* Navbar */
+
 .mobile-navbar {
   background-color: #81CC68;
   border:0px;
+}
 
+#nav-brand {
+  width: 111px;
+  margin: 0px auto;
+  transform:Scale(1.2);
+  position: relative;
+  top: 10px;
 }
 
 .glyphicon-picture {
@@ -44,34 +53,17 @@ hr.list {
   margin: 5px;
 }
 
-/* TopBar */
-#topbar {
-  height:75px;
-  min-width:30%;
-  margin:0px auto;  
-  position:fixed;
-  top:150px;
-  left:30%;
+.nav-link {
+  text-align:center;
 }
 
-/* Mobile Sidebar Button */
-.btn-spec {
-  width:150px;
+/* Mission Control Buttons */
+#manager {
+  width: 420px;
+  background-color: white;
+  margin: 0px auto;
 }
 
-button {
-  border-radius:0;
-}
-
-.mobile-button {
-  width: 75px;
-  height:75px;
-  background-color: #81CC68;
-}
-
-.dropdown-menu {
-  width:100%;
-}
 
 /* Entire Center Display */
 
@@ -100,7 +92,7 @@ button {
 /* Target Project */
 #target-project {
   background-color:white;
-  width:700px;
+  width:95%;
   height:1000px;
   float:left;
   margin: 10px 15px 20px 10px;
@@ -132,7 +124,7 @@ button {
 #project-gallery {
   margin: 10px 10px 20px 10px;
   height: 150px;
-  width: 750px;
+  width: 95%;
   overflow: hidden;
 }
 
@@ -142,6 +134,81 @@ button {
   margin: 0px 5px;
 }
 
+/* Modal Forms*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Form Wrapper*/
+.formWrapper {
+  width:95%;
+  position:fixed;
+  margin: 0px;
+  top:100px;
+  left:15px;
+}
+
+
+/* Project Description Box*/
+#program-desc {
+  display: none;
+  float: left;
+  width: 300px;
+  height: 550px;
+  background-color: white;
+}
+
+.program-desc-h2 {
+  text-align: center;
+  margin: 15px 5px;
+}
+
+.program-desc-p {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Project Form*/
+.story-form {
+  float: none;
+  width: 500px;
+  height: 550px;
+  background-color:white;
+  margin: 0px auto;
+}
+
+.form-group {
+  text-align: center; 
+  position: relative;
+  top: 30px;
+  margin-bottom: 0px;
+}
+
+input {
+  margin-top: 5px;
+}
+
+textarea {
+  margin-top: 10px;
+}
+
+.closeButton {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
 
@@ -172,7 +239,9 @@ button {
 /* Mission Control Buttons */
 #manager {
   width: 420px;
-  margin: 0px auto;
+  background-color: white;
+  position: relative;
+  left: 350px;
 }
 
 
