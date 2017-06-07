@@ -71,10 +71,16 @@
   </div>
 
   <div class="btn-group btn-group-lg" role="group" aria-label="...">
+    <button type="button" class="btn btn-default btn-show">Photos</button>
+    <button type="button" class="btn btn-default btn-add" id="showPhoto" data-form-type="modalPhoto"><span class="glyphicon glyphicon-plus" data-form-type="modalPhoto"></span></button>
+  </div>
+
+
+<!--   <div class="btn-group btn-group-lg" role="group" aria-label="...">
     <button type="button" class="btn btn-default btn-show">Mission</button>
     <button type="button" class="btn btn-default btn-add" id="showMission" data-form-type="modalMission"><span class="glyphicon glyphicon-plus" data-form-type="modalMission"></span></button>
   </div>
-
+ -->
  </div>
 
 
@@ -83,16 +89,9 @@
 
  <!-- Side Projects Display-->
   <div class="material" id="project-types">
-    <h3 id="cats-head">Project List</h3>
-    <hr />
+    <h3 id="cats-head">Parameter List</h3>
     <ul>
-      <a href="#"><li>Astral Might</li></a>
-      <hr />
-      <a href="#"></span><li>First Steps</li></a>
-      <hr />
-      <a href="#"></span><li>Astral Reach</li></a>
-      <hr />
-      <a href="#"></span><li>KerbCo</li></a>     
+      <li><div class= "param-holder">Pick a parameter above to get started!</div></li>     
     </ul>
   </div>  
   
@@ -128,87 +127,82 @@
 
 <!-- Project Form Modal -->
 <div id="modalProject" class="modal">
-  <div class="formWrapper">
-      <!-- Main Form-->
-    <div class="material-sm" id="program-desc">
-      <h2 class="program-desc-h2">What's This?</h2>
-      <hr class="list" />
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-    </div>
 
     <div class="story-form material-sm">
       <form method="post" action="../formproject.php" class="form-group">      
-          <h2>New Space Program</h2>
+          <h2>New Project</h2>
           <hr class="list" />
 
-          <label for="program"> Program Name <br /><input class="form-control" type="text" name="pr_name" ></input></label>    
+          <label for="program"> Project Name <br /><input class="form-control" type="text" name="pr_name" ></input></label>    
           <br />
-          <label for="craft">Program Craft <br /><input class="form-control" type="text" name="pr_craft" ></input></label>
+          <label for="craft">Project Craft <br /><input class="form-control" type="text" name="pr_craft" ></input></label>
           <br />
-          <label for="statement"> Program Mission Statement <br /><input class="form-control" type="text" name="pr_stmt" ></input></label>
+          <label for="statement"> Project Mission Statement <br /><input class="form-control" type="text" name="pr_stmt" ></input></label>
           <br />
           <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="pr_desc" placeholder="Description/Notes Here" ></textarea></label>
           <br />
-          <label for="submit"><input class=" btn btn-default" type="submit" name="program" value="Submit Program"></input></label>
+          <label for="submit"><input class=" btn btn-default" type="submit" name="program" value="Submit Project"></input></label>
       </form>
 
       <button class="btn btn-danger closeButton" data-form-type="modalProject"> <span class="glyphicon glyphicon-remove" data-form-type="modalProject"></span></button>
-    </div>    
-  </div>      
+    </div>   
  
 </div>
 
 <!-- Craft Form Modal -->
 <div id="modalCraft" class="modal">
   <div class="formWrapper">
-      <!-- Form Description -->
-    <div class="material-sm" id="program-desc">
-      <h2 class="program-desc-h2">What's This?</h2>
-      <hr class="list" />
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-    </div>
   <!-- Main Form-->
   <div class="story-form material">
-     <form method="post" action="handle.php" class="form-group">
+     <form method="post" action="../formcraft.php" class="form-group">
       
         <h2>New Craft</h2>
         <hr />
         <!-- Craft Name-->
-      <label for="craft"> Craft Name <br /><input class="form-control" type="text" name="craft" ></input></label>
+      <label for="cr_name"> Craft Name <br /><input class="form-control" type="text" name="cr_name" ></input></label>
       
       <br />
         <!-- Craft Type-->
         <label for="type">Craft Type <br />
-          <select class="form-control" name="type">
-            <option value="lifter">Lifter</option>
-            <option value="ship">Ship</option>
-            <option value="plane">Plane</option>
-            <option value="lander">Lander</option>
+          <select class="form-control" name="cr_type">
+            <option value="101">Lander</option>
+            <option value="102">Spaceplane</option>
+            <option value="103">Probe</option>
+            <option value="104">Ship</option>
+            <option value="105">Station</option>
+            <option value="106">Other</option>
+            <option value="107"></option>
             <!-- Add Option to be able to add custom vehicle types-->
           </select>
         </label>
 
       <!-- Craft Program-->
-      <label for="program"> Craft Program <br />
-        <select class="form-control" name="program">
-          <option value="astral-might">Astral Might</option>
-          <option value="astral-reach">Astral Reach</option>
-          <option value="first-steps">First Steps</option>
+      <label for="project"> Craft Project <br />
+        <select class="form-control" name="cr_project">
         </select>
       </label>
 
       <br />
+
+      <!-- Craft Stats-->
+      <div class= "stats">
+        <label class="stat-label">Stats:</label>
+        <label for="cr_length">Length: <input type="text" name="cr_length" class="form-stats" placeholder="In Meters"></label> 
+        <label for="cr_width">Width: <input type="text" name="cr_width" class="form-stats" placeholder="In Meters"></label> 
+        <label for="cr_height">Height: <input type="text" name="cr_height" class="form-stats" placeholder="In Meters"></label>
+        <label for="cr_dry">Dry Mass: <input type="text" name="cr_dry" class="form-stats" placeholder="In Metric Tons"> </label>  
+        <label for="cr_wet">Wet Mass: <input type="text" name="cr_wet" class="form-stats" placeholder="In Metric Tons"></label>  
+        <label for="cr_crew">Maximum Crew: <input type="number" name="cr_crew" class="form-stats"></label>  
+        <label for="cr_parts">Part Count: <input type="number" name="cr_parts" class="form-stats"></label>  
+      </div>
+
       <!-- Craft Description-->
-      <label for="describe"><textarea class="form-control" type="textarea" rows="4" cols="50" name="describe" placeholder="Description/Notes Here" ></textarea></label>
+      <label for="cr_desc"><textarea class="form-control" type="textarea" rows="4" cols="50" name="cr_desc" placeholder="Description/Notes Here"></textarea></label>
 
       <br />
 
       <!-- Submit Button-->
-      <label for="submit"><input class="btn btn-default" type="submit" name="mission" value="Submit Log"></input></label>
+      <label for="submit"><input class="btn btn-default" type="submit" name="submit" value="Submit Log"></input></label>
     </form>
 
     <button class="btn btn-danger closeButton" data-form-type="modalCraft"> <span class="glyphicon glyphicon-remove" data-form-type="modalCraft"></span></button>
@@ -223,14 +217,6 @@
 
   <div class="formWrapper">
       <!-- Main Form-->
-    <div class="material-sm" id="program-desc">
-      <h2 class="program-desc-h2">What's This?</h2>
-      <hr class="list" />
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-      <p class="program-desc-p">- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tempor ullamcorper blandit. Maecenas facilisis massa a urna molestie, at commodo dui tincidunt. Phasellus id ligula leo. Morbi eu lacus vel arcu mollis fermentum a ac augue.</p>
-    </div>
-
     <div class="story-form material">
        <form method="post" action="handle.php" class="form-group">
         
@@ -271,7 +257,7 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity= "sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> <!-- Bootstrap JS Library-->
 
-<script type="text/javascript" src="./js/newuser.js"></script>
+<script type="text/javascript" src="http://localhost:1234/GameStories/js/newuser.js"></script>
 
 </html>
 
