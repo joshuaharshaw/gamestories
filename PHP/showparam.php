@@ -8,17 +8,27 @@ $type = strtoupper($param);
 
 $typeID= $_GET['typeID'];
 
+<<<<<<< HEAD
 $img = strtolower($param);
 
 
 //Establish Server connection and handle errors. 
 $conn = mysqli_connect("localhost", "root", "sqlbeast", "gamestories");
 
+=======
+
+//Establish Server connection and handle errors. 
+$conn = mysqli_connect("localhost", "root", "sqlbeast", "gamestories");
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
 if (!$conn) {
     die('Could not connect: ' . mysqli_error($conn));
 }
 
+<<<<<<< HEAD
 //#1 Construct SQL Query and execute, storing the result in a variable $result.
+=======
+//Construct SQL Query and execute, storing the result in a variable $result.
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
 
 $sql= "SELECT * FROM {$db} WHERE {$type}_ID = {$typeID}"; 
 
@@ -26,6 +36,7 @@ $result = mysqli_query($conn, $sql);
 
 $row = mysqli_fetch_array($result);
 
+<<<<<<< HEAD
 // IF statement - "Project" parameter. Used to build Top Block of the finished innerHTML.
 if ($param == 'Project') {
   
@@ -98,10 +109,29 @@ $newList =
 
    <div id='project-gallery'>
       {$photoList}
+=======
+// Construct finished element to be inserted. 
+$newList = 
+
+   "<div id='top-block'>
+     <img src='#' width='250px' height='150px' id='img-craft'></img>
+   	 <div id='top-content'>  
+      <h1>{$row[1]}</h1>  
+      <p>
+        Project Statement: <i>{$row[3]}</i> <br />
+        Associated Craft: <a href='>Ursa</a>, <a href='>Eurobird</a>, <a href='>Wren</a>      
+      </p>
+     </div>  
+    </div>
+
+   <div id='project-gallery'>
+   {$fullList}
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
    </div> 
 
    <div id='bottom-block'>
      <h1>Description</h1>
+<<<<<<< HEAD
      <p>{$desc}</p>
    </div>";
 
@@ -110,6 +140,11 @@ $newList =
 
 
 
+=======
+     <p>{$row[4]}</p>
+   </div>";
+
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
 //echo finished element, you are done!!
 echo $newList;
 

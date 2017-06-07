@@ -19,12 +19,20 @@ $result = mysqli_query($conn,$sql);
 $fullList = "";
 
 while ($row = mysqli_fetch_array($result)) {
+<<<<<<< HEAD
     $fullList .= "<li class='param-item' data-type ='{$row[0]}'><div data-type ='{$row[0]}' class='param-project'>{$row[1]}</div></li>";
+=======
+    $fullList .= "<a href='#' data-typeID ='{$row[0]}' class='param-item'><li>{$row[1]}</li></a><hr>";
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
 }
 
 // Construct finished element to be inserted. 
 $newList = 
 "<h3 id='cats-head'>{$param} List</h3>
+<<<<<<< HEAD
+=======
+    <hr />
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
     <ul>
     {$fullList}
     </ul>";

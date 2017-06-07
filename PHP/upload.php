@@ -18,7 +18,10 @@ if(isset($_POST["submit"])) {
         $uploadOk = 0;
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad1c9f7422259f6149aed83743248cd47655ab6b
 // Check if file already exists
 if (file_exists($filePath)) {
     echo "Sorry, file already exists.";
